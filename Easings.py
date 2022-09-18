@@ -108,7 +108,7 @@ def easeOutBounce(x):
         return float(n1 * (x / d1) * x + 0.75)
     elif x < 2.5 / d1:
         x -= 2.25
-        return float(n1 - (x / d1) * x + 0.9375)
+        return float(n1 * (x / d1) * x + 0.9375)
     else:
         x -= 2.625
         return float(n1 * (x / d1) * x + 0.984375)
